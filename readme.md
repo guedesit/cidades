@@ -3,12 +3,13 @@ Deseja ter em seus domínios um serviço para consulta de cidades e estados?
 
 Cidades API é um projeto que disponibiliza um micro serviço para acesso a lista de cidades brasileiras.
 Cidades API é construido com o Lumen, um micro framework desenvolvido pelos colaboradores do popular framework PHP Laravel.
+
 Veja detalhes do benchmark:
 
 ![] (https://s19.postimg.org/aglg3k077/benchmark.png)
 
 ## Requisitos
-Requisitos do lumen: 
+Requisitos do Lumen: 
  - PHP >= 5.6.4
  - OpenSSL PHP Extension
  - PDO PHP Extension
@@ -54,7 +55,9 @@ Após executar o comando acesse o endereço localhost:8000 que exibirá uma pág
 
 ## Migrations
 Estão disponíveis três arquivos de migração para a criação da estrutura de tabelas necessárias à aplicação no diretório database/migrations:
-- 
+- create_paises_table.php
+- create_estados_table.php 
+- create_cidades_table.php
 
 ## Models
 Na aplicação estão disponíveis três modelos no diretório app, são eles:
@@ -71,6 +74,15 @@ Existem três arquivos para popular o banco de dados no diretório database/seed
  - CidadesTableSeeder.php
 
 ## Rotas(EndPoints)
+ - GET - /api/paises
+ - GET - /api/paises/{id}
+ - GET - /api/estados
+ - GET - /api/estados/{id}
+ - GET - /api/cidades
+ - GET - /api/cidades{id}
+ - GET - /api/cidades/estado/{id}
+
+ Observações: {id} = identificador único de cada um dos elementos.
 
 ## Licença
 
