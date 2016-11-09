@@ -26,7 +26,7 @@ Banco de dados:
 ## Instalação
 Download:
 - Clone o projeto: https://github.com/guedesit/cidades.git
-- Entre no diretório do projeto cd nome_do_projeto
+- Entre no diretório do projeto: cd nome_do_projeto
 - Instale as dependências: composer install
 
 Banco de dados [Mysql]:
