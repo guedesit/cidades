@@ -29,7 +29,7 @@ $api = app('Dingo\Api\Routing\Router');
 $api->version('v1', ['middleware' => 'api.throttle'], function($api){
 
     // |||| Informações de endereço |||
-    $api->get('paises', function(){
+    $api->get('/paises', function(){
         return \App\Pais::all();
     });
 
