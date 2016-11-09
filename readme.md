@@ -2,10 +2,9 @@
 Deseja ter em seus domínios um serviço para consulta de cidades e estados?
 
 Cidades API é um projeto que disponibiliza um micro serviço para acesso a lista de cidades brasileiras.
-Cidades API é construido com o Lumen, um micro framework desenvolvido pelos colaboradores do popular framework PHP Laravel.
+Cidades API é construido com o Lumen, um micro framework extremamente rápido, desenvolvido pelos colaboradores do popular framework PHP Laravel.
 
 Veja detalhes do benchmark:
-
 ![] (https://s19.postimg.org/aglg3k077/benchmark.png)
 
 ## Requisitos
@@ -14,10 +13,14 @@ Requisitos do Lumen:
  - OpenSSL PHP Extension
  - PDO PHP Extension
  - Mbstring PHP Extension
-Controle de versão e gerenciador de dependências
+
+Controle de versão e gerenciador de dependências:
+
  - Git 
  - Composer
-Banco de dados: 
+ 
+Banco de dados:
+
  - Mysql (Padrão)
 
 ## Instalação
@@ -27,12 +30,13 @@ Download:
 - Instale as dependências: composer install
 
 Banco de dados [Mysql]:
-- Caso esteja usando o Mysql, crie um banco de dados para a aplicação. 
-- Renomeie o arquivo .env.example para .env
-- Defina o seu APP_KEY
-- Preencha as suas configurações para o banco de dados.
+- Crie um banco de dados para a aplicação no mysql. 
+- Renomeie o arquivo no diretório principal de .env.example para .env
+- Defina o APP_KEY (chave) da aplicação através do comando "php artisan key:generate"
+- Preencha as configurações específicas para o banco de dados no arquivo .env
 
 Migrations: 
+
 As migrações nos ajudam a criar e manter nossas estruturas de banco de dados. Para criar as tabelas necessárias ao projeto
 execute o comando: "php artisan migrate" dentro do diretório raiz do projeto para criação das tabelas.
 Após os comandos, 4 novas tabelas existirão no banco de dados, são elas: 
@@ -41,7 +45,7 @@ Após os comandos, 4 novas tabelas existirão no banco de dados, são elas:
 - estados - contendo detalhes dos estados. E,
 - cidades - contendo detalhes sobre as cidades. 
 
-Com a estrutura do banco de dado já montada é necessário popular as tabelas paises, estados e cidades com os dados.
+Com a estrutura do banco de dado já montada é necessário popular as tabelas: paises, estados e cidades com os dados.
 Estes dados estão armazenados em três arquivos distintos: PaisesTableSeeder.php, EstadosTableSeeder.php e CidadesTableSeeder.php. Para inserir os dados no banco de dados
 apenas execute o comando "php artisan db:seed". 
 
@@ -50,7 +54,7 @@ Executar projeto:
 A partir do diretório raiz do projeto, entre na pasta public/ e execute o servidor embutido do PHP:
  - php -S localhost:8000
 
-Após executar o comando acesse o endereço localhost:8000 que exibirá uma página com detalhe das rotas/endpoints disponíveis.
+Após executar o comando acesse o endereço localhost:8000 que exibirá uma página com detalhes das rotas/endpoints disponíveis.
 
 
 ## Migrations
