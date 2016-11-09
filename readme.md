@@ -1,21 +1,18 @@
-# Lumen PHP Framework
+# Cidades
+É um projeto que disponibiliza um micro serviço para acesso a lista de cidades brasileiras.
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+#Instalação
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+#Migrations
 
-## Official Documentation
+#Models
+Na aplicação estão disponíveis três modelos, são eles:
+Pais;
+Estado;
+Cidade.
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+Observações: Caso seja necessário modificar o nome da tabela do banco de dados que foi anteriormente criada pelos arquivos de migração, basta definir um valor para a propriedade $table do modelo correspondente.
 
-## Security Vulnerabilities
+#Seeders
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+#Rotas(EndPoints)
