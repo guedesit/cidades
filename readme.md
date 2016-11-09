@@ -5,7 +5,7 @@ Cidades API é um projeto que disponibiliza um micro serviço para acesso a list
 Cidades API é construido com o Lumen, um micro framework desenvolvido pelos colaboradores do popular framework PHP Laravel.
 Veja detalhes do benchmark:
 
-[![benchmark.png](https://s19.postimg.org/aglg3k077/benchmark.png)](https://postimg.org/image/c8eeygjjz/)
+![] (https://s19.postimg.org/aglg3k077/benchmark.png)
 
 ## Requisitos
 Requisitos do lumen: 
