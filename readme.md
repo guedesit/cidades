@@ -22,6 +22,7 @@ Controle de versão e gerenciador de dependências:
 Banco de dados:
 
  - Mysql (Padrão)
+ - PostgreSQL
 
 ## Instalação
 Download:
